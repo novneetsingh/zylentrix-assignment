@@ -23,8 +23,7 @@ Develop a simple RESTful API for managing users using basic CRUD (Create, Read, 
 1. **Clone the Repository**
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/novneetsingh/zylentrix-assignment
    ```
 
 2. **Install Dependencies**
@@ -36,7 +35,7 @@ Develop a simple RESTful API for managing users using basic CRUD (Create, Read, 
 3. **Setup MongoDB**
 
    - Ensure you have MongoDB installed and running locally, or use a MongoDB cloud service.
-   - Update your MongoDB connection string in your configuration (if applicable) to connect to your database.
+   - Update your MongoDB connection string in `config/database.js` to connect to your database.
 
 4. **Start the Server**
 
@@ -57,6 +56,8 @@ Develop a simple RESTful API for managing users using basic CRUD (Create, Read, 
 ```
 .
 ├── index.js               // Entry point of the application
+├── config/
+│   └── database.js        // MongoDB connection setup
 ├── controllers/
 │   └── userController.js  // Controller functions for user operations
 ├── models/
@@ -77,9 +78,9 @@ Develop a simple RESTful API for managing users using basic CRUD (Create, Read, 
 
   ```json
   {
-    "name": "",
-    "email": "john@example.com",
-    "age": 30
+    "name": "Novneet Singh",
+    "email": "novneet300@gmail.com",
+    "age": 22
   }
   ```
 
@@ -90,9 +91,9 @@ Develop a simple RESTful API for managing users using basic CRUD (Create, Read, 
     "message": "User created successfully",
     "data": {
       "_id": "unique_user_id",
-      "name": "John Doe",
-      "email": "john@example.com",
-      "age": 30
+      "name": "Novneet Singh",
+      "email": "novneet300@gmail.com",
+      "age": 22
     }
   }
   ```
@@ -109,9 +110,9 @@ Develop a simple RESTful API for managing users using basic CRUD (Create, Read, 
     "data": [
       {
         "_id": "unique_user_id_1",
-        "name": "John Doe",
-        "email": "john@example.com",
-        "age": 30
+        "name": "Novneet Singh",
+        "email": "novneet300@gmail.com",
+        "age": 22
       },
       {
         "_id": "unique_user_id_2",
@@ -135,9 +136,9 @@ Develop a simple RESTful API for managing users using basic CRUD (Create, Read, 
     "message": "User fetched successfully",
     "data": {
       "_id": "unique_user_id",
-      "name": "John Doe",
-      "email": "john@example.com",
-      "age": 30
+      "name": "Novneet Singh",
+      "email": "novneet300@gmail.com",
+      "age": 22
     }
   }
   ```
@@ -151,9 +152,9 @@ Develop a simple RESTful API for managing users using basic CRUD (Create, Read, 
 
   ```json
   {
-    "name": "John Doe Updated",
-    "email": "johnupdated@example.com",
-    "age": 31
+    "name": "Novneet Singh Updated",
+    "email": "novneet300updated@gmail.com",
+    "age": 23
   }
   ```
 
@@ -164,9 +165,9 @@ Develop a simple RESTful API for managing users using basic CRUD (Create, Read, 
     "message": "User updated successfully",
     "data": {
       "_id": "unique_user_id",
-      "name": "John Doe Updated",
-      "email": "johnupdated@example.com",
-      "age": 31
+      "name": "Novneet Singh Updated",
+      "email": "novneet300updated@gmail.com",
+      "age": 23
     }
   }
   ```
@@ -183,9 +184,9 @@ Develop a simple RESTful API for managing users using basic CRUD (Create, Read, 
     "message": "User deleted successfully",
     "data": {
       "_id": "unique_user_id",
-      "name": "John Doe",
-      "email": "john@example.com",
-      "age": 30
+      "name": "Novneet Singh",
+      "email": "novneet300@gmail.com",
+      "age": 22
     }
   }
   ```
@@ -204,4 +205,4 @@ Develop a simple RESTful API for managing users using basic CRUD (Create, Read, 
 
 ## Contact
 
-For any queries or issues regarding this project, please reach out at [novneet300@gmail.com].
+For any queries or issues regarding this project, please reach out at novneet300@gmail.com.
